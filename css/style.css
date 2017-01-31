@@ -4,6 +4,9 @@ body{
 h1{
   text-align: center;
 }
+.picard{
+ display: block; 
+}
 .podcastColumn h2{
  margin: 1em 0 1em 0; 
 }
