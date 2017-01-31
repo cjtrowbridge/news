@@ -16,7 +16,8 @@ $(".feedContainer").each(function(){
       alert($pubDate); 
       if(
          $pubDate==="undefined"||
-         $pubDate==="null"
+         $pubDate==="null"||
+         $pubDate===""
        ){
          var $pubDate     = $(this).find("dc:date").text();
        }
