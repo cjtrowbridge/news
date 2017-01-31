@@ -34,19 +34,19 @@
     <div class="row">
       <div class="col-xs-12 col-md-5 podcastColumn">
       <img src="/img/damage-report.jpg" class="picard">
-      <div class="podcastContainer" data-feedURL="https://www.npr.org/rss/podcast.php?id=500005">
+      <div class="podcastContainer" data-feed="https://www.npr.org/rss/podcast.php?id=500005">
         <img src="https://media.npr.org/images/podcasts/2013/primary/hourly_news_summary-c464279737c989a5fbf3049bc229152af3c36b9d.png?s=1400">
         <h4>NPR: Hourly News Summary</h4>
         <div class="player"></div>
         <div class="clearer"></div>
       </div>
-      <div class="podcastContainer" data-feedURL="http://www.cbc.ca/podcasting/includes/hourlynews.xml">
+      <div class="podcastContainer" data-feed="http://www.cbc.ca/podcasting/includes/hourlynews.xml">
         <img src="http://www.cbc.ca/podcasting/images/promo-hourlies.jpg">
         <h4>CBC: Hourly News</h4>
         <div class="player"></div>
         <div class="clearer"></div>
       </div>
-      <div class="podcastContainer" data-feedURL="http://rss.dw.com/xml/podcast_news">
+      <div class="podcastContainer" data-feed="http://rss.dw.com/xml/podcast_news">
         <img src="http://www.dw.com/image/2135752_7.jpg">
         <h4>Deutsche Welle: Hourly News</h4>
         <div class="player"></div>
@@ -62,9 +62,9 @@
     
   <script>
     $(".podcastContainer").each(function(){
-      var feedURL = $(this).data('feedURL');
-      $(this).find(".player").html(feedURL);
-      alert(feedURL);
+      var feed = $(this).data('feed');
+      $(this).find(".player").html(feed);
+      alert(feed);
     });
     
     
