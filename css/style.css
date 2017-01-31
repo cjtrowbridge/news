@@ -5,7 +5,8 @@ h1{
   text-align: center;
 }
 .picard{
- display: block; 
+  display: block; 
+  width: 100%;
 }
 .podcastColumn h2{
  margin: 1em 0 1em 0; 
