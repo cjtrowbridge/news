@@ -42,18 +42,21 @@
         <h4>NPR: Hourly News Summary</h4>
         <i></i>
         <p></p>
+        <div class="clearer"></div>
       </div>
       <div class="podcastContainer" data-feedURL="http://www.cbc.ca/podcasting/includes/hourlynews.xml">
         <img src="http://www.cbc.ca/podcasting/images/promo-hourlies.jpg">
         <h4>CBC: Hourly News</h4>
         <i></i>
         <p></p>
+        <div class="clearer"></div>
       </div>
       <div class="podcastContainer" data-feedURL="http://rss.dw.com/xml/podcast_news">
         <img src="http://www.dw.com/image/2135752_7.jpg">
         <h4>Deutsche Welle: Hourly News</h4>
         <i></i>
         <p></p>
+        <div class="clearer"></div>
       </div>
     </div>
     <div class="col-xs-12 col-md-7">
