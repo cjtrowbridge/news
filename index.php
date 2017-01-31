@@ -65,11 +65,13 @@
       var podcastContainer = $(this);
       var feed = $(podcastContainer).data('feed');
       $(podcastContainer).find(".player").html(feed);
+      $.get(feed, function(data){
+        var xmlDoc = $.parseXML( data );
+        var $xml = $( xmlDoc );
+        var $title = $xml.find( "title" );
+        $(podcastContainer).find(".player").html($title);
+      });
       
-      //var xml = ,
-      //xmlDoc = $.parseXML( xml ),
-      //$xml = $( xmlDoc ),
-      //$title = $xml.find( "title" );
     });
     
     
