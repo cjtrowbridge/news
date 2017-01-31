@@ -86,13 +86,10 @@ function FetchFeed($url){
       var podcastContainer = $(this);
       var feed = $(podcastContainer).data('feed');
       $(podcastContainer).find(".player").html(feed);
-     console.log('Fetching: '+feed);
+      
       $.get(feed, function(data){
-        console.log('Fetched '+feed+' and got back '+data)
-        //var xmlDoc = $.parseXML( data );
-        //var $xml = $( xmlDoc );
         var $url = $(data).find("enclosure:first-of-type").attr('url');
-        $(podcastContainer).find(".player").html('<audio><source src="'+$url+'" type="audio/ogg"></audio>');
+        $(podcastContainer).find(".player").html('<audio controls preload><source src="'+$url+'" type="audio/ogg"></audio>');
       });
       
     });
