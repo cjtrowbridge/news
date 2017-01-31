@@ -89,7 +89,12 @@ function FetchFeed($url){
       
       $.get(feed, function(data){
         var $url = $(data).find("enclosure:first-of-type").attr('url');
-        $(podcastContainer).find(".player").html('<audio controls preload><source src="'+$url+'" type="audio/ogg"></audio>');
+        var $player='<audio controls preload';
+        if(feed=='/?fetch=npr'){
+           $player+=' autoplay';
+        }
+        $player+='><source src="'+$url+'" type="audio/ogg"></audio>';
+        $(podcastContainer).find(".player").html($player);
       });
       
     });
