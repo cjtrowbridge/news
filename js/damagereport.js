@@ -1,3 +1,30 @@
+$(".feedContainer").each(function(){
+  
+  var feedContainer = $(this);
+  var feed = $(feedContainer).data('feed');
+
+  $.get(feed, function(data){
+    
+    var $channel      = $(data).find('channel');
+    var $channelTitle = $($channel).find('title:first-of-type')[0];
+    console.log($channelTitle);
+    
+    $(data).find('item').each(function(){
+       
+       var $title       = $(this).find("title").text();
+       var $link        = $(this).find("link").text();
+       var $pubDate     = $(this).find("pubDate").text();
+       var $description = '';//$(this).find("description").text();
+       
+       $('#feedContainer').append('<div class="card newsStory" data-pubdate="'+$pubDate+'"><div class="card-block"><h4 class="card-title">'+$title+'</h4><i>'+$channelTitle+'</i><p class="card-text">'+$description+'</p></div></div>');
+     
+    });
+   
+  });
+
+});
+
+
 $(".podcastContainer").each(function(){
   
   var podcastContainer = $(this);
@@ -29,33 +56,6 @@ $(".podcastContainer").each(function(){
      });
 
    });
-   
-  });
-
-});
-
-
-$(".feedContainer").each(function(){
-  
-  var feedContainer = $(this);
-  var feed = $(feedContainer).data('feed');
-
-  $.get(feed, function(data){
-    
-    var $channel      = $(data).find('channel');
-    var $channelTitle = $($channel).find('title:first-of-type')[0].text();
-    console.log($channelTitle);
-    
-    $(data).find('item').each(function(){
-       
-       var $title       = $(this).find("title").text();
-       var $link        = $(this).find("link").text();
-       var $pubDate     = $(this).find("pubDate").text();
-       var $description = '';//$(this).find("description").text();
-       
-       $('#feedContainer').append('<div class="card"><div class="card-block"><h4 class="card-title">'+$title+'</h4><i>'+$channelTitle+'</i><p class="card-text">'+$description+'</p></div></div>');
-     
-    });
    
   });
 
