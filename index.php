@@ -22,28 +22,24 @@
 <body>
 
   <nav class="navbar navbar-fixed-top navbar-dark bg-primary container">
-    <a class="navbar-brand" href="https://astria.tech">Astria</a>
+    <a class="navbar-brand" href="https://astria.tech">Damage Report Global</a>
     <ul class="nav navbar-nav">
-          </ul>
-      </nav>
+      
+    </ul>
+  </nav>
 
   <div class="container" id="bodyContainer">
 
     	
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-12">
-          <h1>Damage Report Global</h1>
-      </div>
-	  </div>
-	  <div class="row">
-			<div class="col-xs-12 col-md-5">
-          <img src="">
-      </div>
-			<div class="col-xs-12 col-md-7">
-          <img src="">
-      </div>
-	  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-5">
+      <img src="">
+    </div>
+    <div class="col-xs-12 col-md-7">
+      <img src="">
+    </div>
+  </div>
 	
 	
   </div><!-- /.container -->
