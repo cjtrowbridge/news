@@ -48,7 +48,7 @@ $(".feedContainer").each(function(){
   $.get(feed, function(data){
     
     var $channel      = $(data).find('channel');
-    var $channelTitle = $($channel).find('title')[0].text();
+    var $channelTitle = $($channel).find('title:first-of-type').text();
     
     $(data).find('item').each(function(){
        
