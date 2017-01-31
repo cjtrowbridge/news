@@ -90,7 +90,7 @@ function FetchFeed($url){
       $.get(feed, function(data){
         var $url = $(data).find("enclosure:first-of-type").attr('url');
         var $player='<audio controls preload';
-        if(feed=='/?fetch=npr'){
+        if(feed=='/?feed=npr'){
            $player+=' autoplay';
         }
         $player+='data-feed="'+feed+'"><source src="'+$url+'" type="audio/ogg"></audio>';
