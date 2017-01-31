@@ -34,6 +34,22 @@
     <div class="row">
       <div class="col-xs-12 col-md-5">
       <img src="/img/damage-report.jpg">
+      <div class="agrogator">
+        <h2>
+          <i class="material-icons agrogate_refresh" onclick="Agrogate();">cached</i>
+          Dev News
+        </h2>
+        <span class="agrogator_enclosure" data-uri="http://stallman.org/rss/rss.xml"></span>
+        <span class="agrogator_enclosure" data-uri="https://news.ycombinator.com/rss"></span>
+        <span class="agrogator_enclosure" data-uri="https://www.reddit.com/r/web_design/.rss"></span>
+        <span class="agrogator_enclosure" data-uri="https://www.reddit.com/r/Entrepreneur/.rss"></span>
+        <span class="agrogator_enclosure" data-uri="https://www.reddit.com/r/HowToHack/.rss"></span>
+        <span class="agrogator_enclosure" data-uri="https://www.reddit.com/r/programming/.rss"></span>
+        <span class="agrogator_enclosure" data-uri="https://www.reddit.com/r/sysadmin/.rss"></span>
+        <span class="agrogator_enclosure" data-uri="https://www.reddit.com/r/Futurology/.rss"></span>
+        <span class="agrogator_enclosure" data-uri="https://devstash.io/trending.atom"></span>
+        <div class="agrogator_container"></div>
+      </div>
     </div>
     <div class="col-xs-12 col-md-7">
       
