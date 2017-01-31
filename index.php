@@ -114,12 +114,19 @@ function FetchFeed($url){
        <p>
          It is surprisingly easy to avoid opinion and commentary and get high-quality news. If you go to Fox News' website, you will see a long list of commentary and opinion on the front page, but if you go to the "World News" page you will find actual news content with far less bias.
        </p>
+       <?php
+       /*
+       These are not ready. DW uses weird dates which are hard to sort. Will work on that later.
+       ?>
        <div class="feedContainer" data-feed="/?feed=npr"></div>
        <div class="feedContainer" data-feed="/?feed=cbc"></div>
        <div class="feedContainer" data-feed="/?feed=aj"></div>
        <div class="feedContainer" data-feed="/?feed=dw"></div>
        <div class="feedContainer" data-feed="/?feed=bbc"></div>
        <div class="feedContainer" data-feed="/?feed=fox"></div>
+       <?php
+       */
+       ?>
        <div id="feedContainer">Loading Stories...</div>
       </div>
     </div>
