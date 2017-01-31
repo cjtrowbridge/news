@@ -16,10 +16,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
   
   <link rel="stylesheet" href="/css/style.css">
-  
-  <!--Google Feeds API-->
-  <script src="https://www.google.com/jsapi"></script>
-  
+    
   </head>
 
 <body>
@@ -37,21 +34,26 @@
     <div class="row">
       <div class="col-xs-12 col-md-5">
       <img src="/img/damage-report.jpg">
-      <div class="agrogator">
-        <h2>
-          <i class="material-icons agrogate_refresh" onclick="Agrogate();">cached</i>
-          Dev News
-        </h2>
-        <span class="agrogator_enclosure" data-uri="http://stallman.org/rss/rss.xml"></span>
-        <span class="agrogator_enclosure" data-uri="https://news.ycombinator.com/rss"></span>
-        <span class="agrogator_enclosure" data-uri="https://www.reddit.com/r/web_design/.rss"></span>
-        <span class="agrogator_enclosure" data-uri="https://www.reddit.com/r/Entrepreneur/.rss"></span>
-        <span class="agrogator_enclosure" data-uri="https://www.reddit.com/r/HowToHack/.rss"></span>
-        <span class="agrogator_enclosure" data-uri="https://www.reddit.com/r/programming/.rss"></span>
-        <span class="agrogator_enclosure" data-uri="https://www.reddit.com/r/sysadmin/.rss"></span>
-        <span class="agrogator_enclosure" data-uri="https://www.reddit.com/r/Futurology/.rss"></span>
-        <span class="agrogator_enclosure" data-uri="https://devstash.io/trending.atom"></span>
-        <div class="agrogator_container"></div>
+      <h2>
+        Hourly World News Podcasts
+      </h2>
+      <div class="podcastContainer" data-feedURL="https://www.npr.org/rss/podcast.php?id=500005">
+        <img src="https://media.npr.org/images/podcasts/2013/primary/hourly_news_summary-c464279737c989a5fbf3049bc229152af3c36b9d.png?s=1400">
+        <h3>NPR: Hourly News Summary</h3>
+        <i></i>
+        <p></p>
+      </div>
+      <div class="podcastContainer" data-feedURL="http://www.cbc.ca/podcasting/includes/hourlynews.xml">
+        <img src="http://www.cbc.ca/podcasting/images/promo-hourlies.jpg">
+        <h3>CBC: Hourly News</h3>
+        <i></i>
+        <p></p>
+      </div>
+      <div class="podcastContainer" data-feedURL="http://rss.dw.com/xml/podcast_news">
+        <img src="http://www.dw.com/image/2135752_7.jpg">
+        <h3>Deutsche Welle: Hourly News</h3>
+        <i></i>
+        <p></p>
       </div>
     </div>
     <div class="col-xs-12 col-md-7">
@@ -61,6 +63,11 @@
   
   </div><!-- /.container -->
     
-  <script src="/js/agrogate-1.0.js"></script>
+  <script>
+    var xml = "<rss version='2.0'><channel><title>RSS Title</title></channel></rss>",
+    xmlDoc = $.parseXML( xml ),
+    $xml = $( xmlDoc ),
+    $title = $xml.find( "title" );
+  </script>
 </body>
 </html>
