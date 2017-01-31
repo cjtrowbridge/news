@@ -33,3 +33,36 @@ $(".podcastContainer").each(function(){
   });
 
 });
+
+
+
+
+
+
+
+$(".feedContainer").each(function(){
+  
+  var feedContainer = $(this);
+  var feed = $(feedContainer).data('feed');
+
+  $.get(feed, function(data){
+    
+    $(data).find('item').each(function(){
+      
+      var $title       = $(this).find("title").html();
+      var $link        = $(this).find("link").html();
+      var $pubDate     = $(this).find("pubDate").html();
+      var $description = $(this).find("description").html();
+      
+      $('feedContainer').append('<div class="card"><div class="card-block"><h4 class="card-title">'+$title+'</h4><p class="card-text">'+$description+'</p></div></div>');
+      
+    });
+    
+   });
+   
+  });
+
+});
+
+
+<div id="feedContainer">Loading Stories...</div>
