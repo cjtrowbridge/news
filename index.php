@@ -71,7 +71,8 @@ function FetchFeed($url){
     <div class="row">
       <div class="col-xs-12 col-md-5 podcastColumn">
       <img src="/img/damage-report.jpg" class="picard">
-      <p>These are extremely high quality news sources which do not include any commentary, just news.</p>
+      <h4>Quality Sources</h4>
+      <p>These high quality news sources do not include any commentary, just news.</p>
       <div class="podcastContainer" data-feed="/?feed=npr">
         <img src="https://media.npr.org/images/podcasts/2013/primary/hourly_news_summary-c464279737c989a5fbf3049bc229152af3c36b9d.png?s=1400">
         <h4>NPR: Hourly World News</h4>
