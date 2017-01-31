@@ -37,22 +37,19 @@
       <div class="podcastContainer" data-feedURL="https://www.npr.org/rss/podcast.php?id=500005">
         <img src="https://media.npr.org/images/podcasts/2013/primary/hourly_news_summary-c464279737c989a5fbf3049bc229152af3c36b9d.png?s=1400">
         <h4>NPR: Hourly News Summary</h4>
-        <i></i>
-        <p></p>
+        <div class="player"></div>
         <div class="clearer"></div>
       </div>
       <div class="podcastContainer" data-feedURL="http://www.cbc.ca/podcasting/includes/hourlynews.xml">
         <img src="http://www.cbc.ca/podcasting/images/promo-hourlies.jpg">
         <h4>CBC: Hourly News</h4>
-        <i></i>
-        <p></p>
+        <div class="player"></div>
         <div class="clearer"></div>
       </div>
       <div class="podcastContainer" data-feedURL="http://rss.dw.com/xml/podcast_news">
         <img src="http://www.dw.com/image/2135752_7.jpg">
         <h4>Deutsche Welle: Hourly News</h4>
-        <i></i>
-        <p></p>
+        <div class="player"></div>
         <div class="clearer"></div>
       </div>
     </div>
@@ -64,6 +61,12 @@
   </div><!-- /.container -->
     
   <script>
+    $(".podcastContainer").each(function(){
+      var url = $(this).data('feedURL');
+      $(this).find(".player").html(url);
+    });
+    
+    
     var xml = "<rss version='2.0'><channel><title>RSS Title</title></channel></rss>",
     xmlDoc = $.parseXML( xml ),
     $xml = $( xmlDoc ),
