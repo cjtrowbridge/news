@@ -39,7 +39,7 @@ function FetchFeed($url){
   <link rel="stylesheet" href="/css/style.css">
 
   <meta property="og:title" content="Damage Report">
-  <meta property="og:type" content="news">
+  <meta property="og:type" content="website">
   <meta property="og:url" content="https://damagereport.cjtrowbridge.com">
   <meta property="og:image" content="https://damagereport.cjtrowbridge.com/img/damage-report.jpg">
     
