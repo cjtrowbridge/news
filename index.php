@@ -26,7 +26,7 @@ function FetchFeed($url){
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="icon" href="/img/facepalm.jpg">
+  <link rel="icon" href="/img/damage-report.jpg">
 
   <title>Damage Report</title>
 
