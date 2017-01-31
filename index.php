@@ -55,7 +55,8 @@ function FetchFeed($url){
   <meta property="og:description" content="These high quality news sources do not include any commentary, just news." />
   <meta property="og:url" content="https://damagereport.cjtrowbridge.com">
   <meta property="og:image" content="https://damagereport.cjtrowbridge.com/img/damage-report.jpg">
-    
+  
+  <meta name="google-site-verification" content="RedbnFZrd2W2D1gCx2tGH67fGPAYcp-ONx68PZsAJmo" />
 </head>
 
 <body>
@@ -113,6 +114,10 @@ function FetchFeed($url){
        <h2>Finding News and Avoiding Commentary</h2>
        <p>
          It is surprisingly easy to avoid opinion and commentary and get high-quality news. If you go to Fox News' website, you will see a long list of commentary and opinion on the front page, but if you go to the "World News" page you will find actual news content with far less bias.
+       </p>
+       <h2>Fresh</h2>
+       <p>
+         
        </p>
        <?php
        /*
