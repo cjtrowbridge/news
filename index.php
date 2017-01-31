@@ -127,7 +127,7 @@ function FetchFeed($url){
        <?php
        */
        ?>
-       <div id="feedContainer">Loading Stories...</div>
+       <div id="feedContainer"></div>
       </div>
     </div>
   
