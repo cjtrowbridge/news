@@ -48,8 +48,7 @@ $(".feedContainer").each(function(){
   $.get(feed, function(data){
     
     var $channel      = $(data).find('channel');
-    var $channelTitle = $($channel).find('title');
-    console.log($channelTitle);
+    var $channelTitle = $($channel).find('title')[0].text();
     
     $(data).find('item').each(function(){
        
