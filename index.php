@@ -64,6 +64,7 @@
     $(".podcastContainer").each(function(){
       var url = $(this).data('feedURL');
       $(this).find(".player").html(url);
+      alert(url);
     });
     
     
