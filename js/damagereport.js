@@ -35,11 +35,6 @@ $(".podcastContainer").each(function(){
 });
 
 
-
-
-
-
-
 $(".feedContainer").each(function(){
   
   var feedContainer = $(this);
@@ -48,7 +43,8 @@ $(".feedContainer").each(function(){
   $.get(feed, function(data){
     
     var $channel      = $(data).find('channel');
-    var $channelTitle = $($channel).find('title:first-of-type').text();
+    var $channelTitle = $($channel).find('title:first-of-type');
+    console.log($channelTitle);
     
     $(data).find('item').each(function(){
        
