@@ -1,4 +1,25 @@
-<!DOCTYPE html>
+<?php
+
+if(isset($_GET['feed'])){
+ switch(){
+   case 'npr':
+     FetchFeed('https://www.npr.org/rss/podcast.php?id=500005');
+   case 'cbc':
+     FetchFeed('http://www.cbc.ca/podcasting/includes/hourlynews.xml');
+   case 'dw':
+     FetchFeed('http://rss.dw.com/xml/podcast_news');
+   default:
+     die('Unknown Feed');
+ }
+}
+
+function FetchFeed($url){
+  header("Content-type: text/xml");
+  echo file_get_contents($url);
+  exit;
+}
+
+?><!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -34,19 +55,19 @@
     <div class="row">
       <div class="col-xs-12 col-md-5 podcastColumn">
       <img src="/img/damage-report.jpg" class="picard">
-      <div class="podcastContainer" data-feed="https://www.npr.org/rss/podcast.php?id=500005">
+      <div class="podcastContainer" data-feed="/?feed=npr">
         <img src="https://media.npr.org/images/podcasts/2013/primary/hourly_news_summary-c464279737c989a5fbf3049bc229152af3c36b9d.png?s=1400">
         <h4>NPR: Hourly News Summary</h4>
         <div class="player"></div>
         <div class="clearer"></div>
       </div>
-      <div class="podcastContainer" data-feed="http://www.cbc.ca/podcasting/includes/hourlynews.xml">
+      <div class="podcastContainer" data-feed="/?feed=cbc">
         <img src="http://www.cbc.ca/podcasting/images/promo-hourlies.jpg">
         <h4>CBC: Hourly News</h4>
         <div class="player"></div>
         <div class="clearer"></div>
       </div>
-      <div class="podcastContainer" data-feed="http://rss.dw.com/xml/podcast_news">
+      <div class="podcastContainer" data-feed="/?fetch=dw">
         <img src="http://www.dw.com/image/2135752_7.jpg">
         <h4>Deutsche Welle: Hourly News</h4>
         <div class="player"></div>
