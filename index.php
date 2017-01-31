@@ -17,7 +17,9 @@
   
   <link rel="stylesheet" href="/css/style.css">
   
-
+  <!--Google Feeds API-->
+  <script src="https://www.google.com/jsapi"></script>
+  
   </head>
 
 <body>
