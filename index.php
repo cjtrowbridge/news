@@ -96,7 +96,6 @@ function FetchFeed($url){
     $(".podcastContainer").each(function(){
       var podcastContainer = $(this);
       var feed = $(podcastContainer).data('feed');
-      $(podcastContainer).find(".player").html(feed);
       
       $.get(feed, function(data){
         var $url = $(data).find("enclosure:first-of-type").attr('url');
