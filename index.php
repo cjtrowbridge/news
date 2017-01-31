@@ -97,7 +97,7 @@ function FetchFeed($url){
         $(podcastContainer).find(".player").html($player);
         $(podcastContainer).find("audio").on('ended', function(){
           $(this).remove();
-          $('audio:first-of-type').play();
+          $('audio:first-of-type')[0].play();
        });
       });
       
