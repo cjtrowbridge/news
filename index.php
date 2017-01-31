@@ -92,7 +92,7 @@ function FetchFeed($url){
         //var xmlDoc = $.parseXML( data );
         //var $xml = $( xmlDoc );
         var $url = $(data).find("enclosure:first-of-type").attr('url');
-        $(podcastContainer).find(".player").html('<audio><source src="'+url+'" type="audio/ogg"></audio>');
+        $(podcastContainer).find(".player").html('<audio><source src="'+$url+'" type="audio/ogg"></audio>');
       });
       
     });
