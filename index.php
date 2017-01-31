@@ -28,7 +28,7 @@ function FetchFeed($url){
 
   <link rel="icon" href="/img/facepalm.jpg">
 
-  <title>Damage Report Global</title>
+  <title>Damage Report</title>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
@@ -43,7 +43,7 @@ function FetchFeed($url){
 <body>
 
   <nav class="navbar navbar-fixed-top navbar-dark bg-primary container">
-    <a class="navbar-brand" href="https://damagereport.cjtrowbridge.com">Damage Report Global</a>
+    <a class="navbar-brand" href="https://damagereport.cjtrowbridge.com">Damage Report</a>
     <ul class="nav navbar-nav">
       
     </ul>
