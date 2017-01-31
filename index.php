@@ -1,7 +1,7 @@
 <?php
 
 if(isset($_GET['feed'])){
- switch(){
+ switch($_GET['feed']){
    case 'npr':
      FetchFeed('https://www.npr.org/rss/podcast.php?id=500005');
    case 'cbc':
