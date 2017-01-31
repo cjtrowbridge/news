@@ -64,7 +64,7 @@
     $(".podcastContainer").each(function(){
       var podcastContainer = $(this);
       var feed = $(podcastContainer).data('feed');
-      $(this).find(".player").html(feed);
+      $(podcastContainer).find(".player").html(feed);
       
       //var xml = ,
       //xmlDoc = $.parseXML( xml ),
