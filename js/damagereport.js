@@ -13,6 +13,9 @@ $(".feedContainer").each(function(){
        var $title       = $(this).find("title").text();
        var $link        = $(this).find("link").text();
        var $pubDate     = $(this).find("pubDate").text();
+       if($pubDate==="undefined"){
+         var $pubDate     = $(this).find("dc:date").text();
+       }
        var $description = '';//$(this).find("description").text();
        
        $('#feedContainer').append('<div class="card newsStory" data-pubdate="'+$pubDate+'"><div class="card-block"><h4 class="card-title">'+$title+'</h4><i>'+$channelTitle+'</i><p class="card-text">'+$description+'</p></div></div>');
