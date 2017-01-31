@@ -2,24 +2,24 @@
 
 if(isset($_GET['feed'])){
  switch($_GET['feed']){
-   case 'npr':
+   case 'npr-podcast':
      FetchFeed('https://www.npr.org/rss/podcast.php?id=500005');
-   case 'cbc':
+   case 'cbc-podcast':
      FetchFeed('http://www.cbc.ca/podcasting/includes/hourlynews.xml');
-   case 'dw':
+   case 'dw-podcast':
      FetchFeed('http://rss.dw.com/xml/podcast_news');
    case 'npr':
      FetchFeed('http://www.npr.org/rss/rss.php?id=1004');
-   case 'npr':
+   case 'cbc':
      FetchFeed('http://www.cbc.ca/cmlink/rss-world');
-   case 'npr':
+   case 'aj':
      FetchFeed('http://www.aljazeera.com/xml/rss/all.xml');
-   case 'npr':
+   case 'dw':
      FetchFeed('http://rss.dw.com/rdf/rss-en-top');
-   case 'npr':
+   case 'bbc':
      FetchFeed('http://feeds.bbci.co.uk/news/world/rss.xml');
-   case 'npr':
-     FetchFeed('http://feeds.foxnews.com/foxnews/world');
+   case 'fox':
+     FetchFeed('http://feeds.foxnews.com/foxnews/world?format=xml');
    default:
      die('Unknown Feed');
  }
@@ -84,19 +84,19 @@ function FetchFeed($url){
       <div class="row">
         <div class="col-xs-12 col-md-5 podcastColumn">
         <img src="/img/damage-report.jpg" class="picard">
-        <div class="podcastContainer" data-feed="/?feed=npr">
+        <div class="podcastContainer" data-feed="/?feed=npr-podcast">
           <img src="https://media.npr.org/images/podcasts/2013/primary/hourly_news_summary-c464279737c989a5fbf3049bc229152af3c36b9d.png?s=1400">
           <h4>NPR: Hourly World News</h4>
           <div class="player"></div>
           <div class="clearer"></div>
         </div>
-        <div class="podcastContainer" data-feed="/?feed=cbc">
+        <div class="podcastContainer" data-feed="/?feed=cbc-podcast">
           <img src="http://www.cbc.ca/podcasting/images/promo-hourlies.jpg">
           <h4>CBC: Hourly World News</h4>
           <div class="player"></div>
           <div class="clearer"></div>
         </div>
-        <div class="podcastContainer" data-feed="/?feed=dw">
+        <div class="podcastContainer" data-feed="/?feed=dw-podcast">
           <img src="http://www.dw.com/image/2135752_7.jpg">
           <h4>Deutsche Welle: Hourly World News</h4>
           <div class="player"></div>
@@ -114,8 +114,13 @@ function FetchFeed($url){
        <p>
          It is surprisingly easy to avoid opinion and commentary and get high-quality news. If you go to Fox News' website, you will see a long list of commentary and opinion on the front page, but if you go to the "World News" page you will find actual news content with far less bias.
        </p>
-       <div class="podcastContainer" data-feed="/?feed=npr">
-        
+       <div class="feedContainer" data-feed="/?feed=npr"></div>
+       <div class="feedContainer" data-feed="/?feed=cbc"></div>
+       <div class="feedContainer" data-feed="/?feed=aj"></div>
+       <div class="feedContainer" data-feed="/?feed=dw"></div>
+       <div class="feedContainer" data-feed="/?feed=bbc"></div>
+       <div class="feedContainer" data-feed="/?feed=fox"></div>
+       <div id="feedContainer">Loading Stories...</div>
       </div>
     </div>
   
