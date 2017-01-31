@@ -74,7 +74,7 @@ function FetchFeed($url){
       
     </ul>
     <div class="facebookBox">
-      <div class="fb-like" data-href="http://damagereport.cjtrowbridge.com/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+      <div class="fb-like" data-href="https://damagereport.cjtrowbridge.com/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
     </div>
   </nav>
 
