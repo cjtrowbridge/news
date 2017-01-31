@@ -67,7 +67,7 @@ function FetchFeed($url){
         <div class="player"></div>
         <div class="clearer"></div>
       </div>
-      <div class="podcastContainer" data-feed="/?fetch=dw">
+      <div class="podcastContainer" data-feed="/?feed=dw">
         <img src="http://www.dw.com/image/2135752_7.jpg">
         <h4>Deutsche Welle: Hourly News</h4>
         <div class="player"></div>
