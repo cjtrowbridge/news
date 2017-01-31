@@ -12,3 +12,7 @@ h1{
   width: 4em;
   margin: 0 .5em .5em 0;
 }
+.podcastContainer{
+  clear: both;
+  margin-bottom: 1em;
+}
