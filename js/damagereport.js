@@ -5,7 +5,7 @@ $(".feedContainer").each(function(){
 
   $.get(feed, function(data){
     
-    var $channelTitle      = $(data).find('title:first-of-type').text();
+    var $channelTitle = $(data).find('title').first().text();
     console.log($channelTitle);
     
     $(data).find('item').each(function(){
