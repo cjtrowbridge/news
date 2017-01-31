@@ -29,3 +29,6 @@ h1{
 .clearer{
  clear: both; 
 }
+audio{
+ max-width: 100%; 
+}
