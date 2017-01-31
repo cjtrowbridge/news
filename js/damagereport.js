@@ -55,6 +55,7 @@ $(".feedContainer").each(function(){
        var $description = $(this).find("description").html();
        
        $('feedContainer').append('<div class="card"><div class="card-block"><h4 class="card-title">'+$title+'</h4><p class="card-text">'+$description+'</p></div></div>');
+       console.log($title);
      
     });
    
