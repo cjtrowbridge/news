@@ -39,19 +39,19 @@
       </h2>
       <div class="podcastContainer" data-feedURL="https://www.npr.org/rss/podcast.php?id=500005">
         <img src="https://media.npr.org/images/podcasts/2013/primary/hourly_news_summary-c464279737c989a5fbf3049bc229152af3c36b9d.png?s=1400">
-        <h3>NPR: Hourly News Summary</h3>
+        <h4>NPR: Hourly News Summary</h4>
         <i></i>
         <p></p>
       </div>
       <div class="podcastContainer" data-feedURL="http://www.cbc.ca/podcasting/includes/hourlynews.xml">
         <img src="http://www.cbc.ca/podcasting/images/promo-hourlies.jpg">
-        <h3>CBC: Hourly News</h3>
+        <h4>CBC: Hourly News</h4>
         <i></i>
         <p></p>
       </div>
       <div class="podcastContainer" data-feedURL="http://rss.dw.com/xml/podcast_news">
         <img src="http://www.dw.com/image/2135752_7.jpg">
-        <h3>Deutsche Welle: Hourly News</h3>
+        <h4>Deutsche Welle: Hourly News</h4>
         <i></i>
         <p></p>
       </div>
