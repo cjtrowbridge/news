@@ -93,7 +93,7 @@ function FetchFeed($url){
         if(feed=='/?feed=npr'){
            $player+=' autoplay';
         }
-        $player+='data-feed="'+feed+'"><source src="'+$url+'" type="audio/ogg"></audio>';
+        $player+=' data-feed="'+feed+'"><source src="'+$url+'" type="audio/ogg"></audio>';
         $(podcastContainer).find(".player").html($player);
       });
       
