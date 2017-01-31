@@ -62,9 +62,9 @@
     
   <script>
     $(".podcastContainer").each(function(){
-      var url = $(this).data('feedURL');
-      $(this).find(".player").html(url);
-      alert(url);
+      var feedURL = $(this).data('feedURL');
+      $(this).find(".player").html(feedURL);
+      alert(feedURL);
     });
     
     
