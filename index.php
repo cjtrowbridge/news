@@ -17,7 +17,7 @@
   
   <link rel="stylesheet" href="/css/style.css">
     
-  </head>
+</head>
 
 <body>
 
@@ -34,9 +34,6 @@
     <div class="row">
       <div class="col-xs-12 col-md-5 podcastColumn">
       <img src="/img/damage-report.jpg" class="picard">
-      <h2>
-        Cutting Edge World News
-      </h2>
       <div class="podcastContainer" data-feedURL="https://www.npr.org/rss/podcast.php?id=500005">
         <img src="https://media.npr.org/images/podcasts/2013/primary/hourly_news_summary-c464279737c989a5fbf3049bc229152af3c36b9d.png?s=1400">
         <h4>NPR: Hourly News Summary</h4>
