@@ -4,6 +4,9 @@ body{
 h1{
   text-align: center;
 }
+.podcastColumn h2{
+ margin-bottom: 1em; 
+}
 .podcastContainer img{
   float: left;
   width: 4em;
