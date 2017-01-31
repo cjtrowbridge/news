@@ -48,14 +48,15 @@ $(".feedContainer").each(function(){
   $.get(feed, function(data){
     
     var $channel      = $(data).find('channel');
-    var $channelTitle = $($channel).find('title').text();
+    var $channelTitle = $($channel).find('title');
+    console.log($channelTitle);
     
     $(data).find('item').each(function(){
        
        var $title       = $(this).find("title").text();
        var $link        = $(this).find("link").text();
        var $pubDate     = $(this).find("pubDate").text();
-       var $description = $(this).find("description").text();
+       var $description = '';//$(this).find("description").text();
        
        $('#feedContainer').append('<div class="card"><div class="card-block"><h4 class="card-title">'+$title+'</h4><i>'+$channelTitle+'</i><p class="card-text">'+$description+'</p></div></div>');
      
