@@ -30,14 +30,13 @@
 
   <div class="container" id="bodyContainer">
 
-    	
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-md-5">
-      <img src="/img/damagereport.">
+      <img src="/img/damage-report.jpg">
     </div>
     <div class="col-xs-12 col-md-7">
-      <img src="">
+      
     </div>
   </div>
 	
