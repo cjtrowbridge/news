@@ -62,16 +62,18 @@
     
   <script>
     $(".podcastContainer").each(function(){
-      var feed = $(this).data('feed');
+      var podcastContainer = $(this);
+      var feed = $(podcastContainer).data('feed');
       $(this).find(".player").html(feed);
-      alert(feed);
+      
+      //var xml = ,
+      //xmlDoc = $.parseXML( xml ),
+      //$xml = $( xmlDoc ),
+      //$title = $xml.find( "title" );
     });
     
     
-    var xml = "<rss version='2.0'><channel><title>RSS Title</title></channel></rss>",
-    xmlDoc = $.parseXML( xml ),
-    $xml = $( xmlDoc ),
-    $title = $xml.find( "title" );
+    
   </script>
 </body>
 </html>
