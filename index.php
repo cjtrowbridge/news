@@ -86,7 +86,9 @@ function FetchFeed($url){
       var podcastContainer = $(this);
       var feed = $(podcastContainer).data('feed');
       $(podcastContainer).find(".player").html(feed);
+     console.log('Fetching: '+feed);
       $.get(feed, function(data){
+        console.log('Fetched '+feed+' and got back '+data)
         var xmlDoc = $.parseXML( data );
         var $xml = $( xmlDoc );
         var $title = $xml.find( "title" );
