@@ -117,7 +117,7 @@ function FetchFeed($url){
        </p>
        <h2>Fresh</h2>
        <p>
-         
+         These podcasts are updated every hour.
        </p>
        <?php
        /*
