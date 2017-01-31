@@ -47,6 +47,9 @@ $(".feedContainer").each(function(){
 
   $.get(feed, function(data){
     
+    var $channel      = $(data).find('channel');
+    var $channelTitle = $($channel).find('title');
+    
     $(data).find('item').each(function(){
        
        var $title       = $(this).find("title").html();
@@ -54,7 +57,7 @@ $(".feedContainer").each(function(){
        var $pubDate     = $(this).find("pubDate").html();
        var $description = $(this).find("description").html();
        
-       $('#feedContainer').append('<div class="card"><div class="card-block"><h4 class="card-title">'+$title+'</h4><p class="card-text">'+$description+'</p></div></div>');
+       $('#feedContainer').append('<div class="card"><div class="card-block"><h4 class="card-title">'+$title+'</h4><i>'+$channelTitle'+</i><p class="card-text">'+$description+'</p></div></div>');
      
     });
    
