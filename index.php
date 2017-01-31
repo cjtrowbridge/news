@@ -40,6 +40,7 @@ function FetchFeed($url){
 
   <meta property="og:title" content="Damage Report">
   <meta property="og:type" content="website">
+  <meta property="og:description" content="These high quality news sources do not include any commentary, just news." />
   <meta property="og:url" content="https://damagereport.cjtrowbridge.com">
   <meta property="og:image" content="https://damagereport.cjtrowbridge.com/img/damage-report.jpg">
     
@@ -67,35 +68,35 @@ function FetchFeed($url){
 
   <div class="container" id="bodyContainer">
 
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-md-5 podcastColumn">
-      <img src="/img/damage-report.jpg" class="picard">
-      <h4>Quality Sources</h4>
-      <p>These high quality news sources do not include any commentary, just news.</p>
-      <div class="podcastContainer" data-feed="/?feed=npr">
-        <img src="https://media.npr.org/images/podcasts/2013/primary/hourly_news_summary-c464279737c989a5fbf3049bc229152af3c36b9d.png?s=1400">
-        <h4>NPR: Hourly World News</h4>
-        <div class="player"></div>
-        <div class="clearer"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-5 podcastColumn">
+        <img src="/img/damage-report.jpg" class="picard">
+        <h4>Quality Sources</h4>
+        <p>These high quality news sources do not include any commentary, just news.</p>
+        <div class="podcastContainer" data-feed="/?feed=npr">
+          <img src="https://media.npr.org/images/podcasts/2013/primary/hourly_news_summary-c464279737c989a5fbf3049bc229152af3c36b9d.png?s=1400">
+          <h4>NPR: Hourly World News</h4>
+          <div class="player"></div>
+          <div class="clearer"></div>
+        </div>
+        <div class="podcastContainer" data-feed="/?feed=cbc">
+          <img src="http://www.cbc.ca/podcasting/images/promo-hourlies.jpg">
+          <h4>CBC: Hourly World News</h4>
+          <div class="player"></div>
+          <div class="clearer"></div>
+        </div>
+        <div class="podcastContainer" data-feed="/?feed=dw">
+          <img src="http://www.dw.com/image/2135752_7.jpg">
+          <h4>Deutsche Welle: Hourly World News</h4>
+          <div class="player"></div>
+          <div class="clearer"></div>
+        </div>
       </div>
-      <div class="podcastContainer" data-feed="/?feed=cbc">
-        <img src="http://www.cbc.ca/podcasting/images/promo-hourlies.jpg">
-        <h4>CBC: Hourly World News</h4>
-        <div class="player"></div>
-        <div class="clearer"></div>
-      </div>
-      <div class="podcastContainer" data-feed="/?feed=dw">
-        <img src="http://www.dw.com/image/2135752_7.jpg">
-        <h4>Deutsche Welle: Hourly World News</h4>
-        <div class="player"></div>
-        <div class="clearer"></div>
+      <div class="col-xs-12 col-md-7">
+
       </div>
     </div>
-    <div class="col-xs-12 col-md-7">
-      
-    </div>
-  </div>
   
   </div><!-- /.container -->
     
