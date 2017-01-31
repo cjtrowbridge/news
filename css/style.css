@@ -1,6 +1,9 @@
 body{
   padding-top: 5rem;
 }
+.facebookBox{
+  float: right; 
+}
 h1{
   text-align: center;
 }
