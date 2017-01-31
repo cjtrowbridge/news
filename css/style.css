@@ -4,3 +4,8 @@ body{
 h1{
   text-align: center;
 }
+.podcastContainer img{
+  float: left;
+  width: 4em;
+  margin: 0 .5em .5em 0;
+}
