@@ -91,8 +91,8 @@ function FetchFeed($url){
         console.log('Fetched '+feed+' and got back '+data)
         //var xmlDoc = $.parseXML( data );
         //var $xml = $( xmlDoc );
-        var $title = $(data).find("enclosure:first-of-type").attr('url');
-        $(podcastContainer).find(".player").html($title);
+        var $url = $(data).find("enclosure:first-of-type").attr('url');
+        $(podcastContainer).find(".player").html('<audio><source src="'+url+'" type="audio/ogg"></audio>');
       });
       
     });
