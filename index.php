@@ -104,7 +104,7 @@ function FetchFeed($url){
         </div>
       </div>
       <div class="col-xs-12 col-md-7 storyColumn">
-        <h1>And Important Distinction</h1>
+        <h1>An Important Distinction</h1>
         <p>There is a difference between news and commentary. Most sources we think of as "news" sources do not even claim to be news. If you go to Huffington Post or Drudge Report and open up their top five links, you will see a banner at the top that says "Opinion." Fox News, despite its name, only claims to be news during its morning news hours. Their primetime shows that people actually watch are considered commentary and do not have to make any attempt to avoid bias.</p>
         <h2>Finding News and Avoiding Commentary</h2>
         <p>It is surprisingly easy to avoid opinion and commentary and get high-quality news even from the most biased sources. If you go to Fox News' website, you will see a long list of commentary and opinion on the front page. But if you click through to the page titled "World News," you will find actual news content with far less bias.</p>
