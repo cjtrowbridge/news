@@ -96,7 +96,7 @@ function FetchFeed($url){
         $player+='><source src="'+$url+'" type="audio/mp3"></audio>';
         $(podcastContainer).find(".player").html($player);
         $(podcastContainer).find("audio").on('ended', function(){
-         $.when($('.podcastContainer:first-of-type').fadeOut(400);)
+         $.when($('.podcastContainer:first-of-type').fadeOut(400))
          .done(function() {
           $('audio:first-of-type')[0].play();
          });
