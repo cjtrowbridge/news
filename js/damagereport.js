@@ -13,7 +13,10 @@ $(".feedContainer").each(function(){
        var $title       = $(this).find("title").text();
        var $link        = $(this).find("link").text();
        var $pubDate     = $(this).find("pubDate").text();
-       if($pubDate==="undefined"){
+       if(
+         $pubDate==="undefined"||
+         $pubDate==="null"
+       ){
          var $pubDate     = $(this).find("dc:date").text();
        }
        var $description = '';//$(this).find("description").text();
