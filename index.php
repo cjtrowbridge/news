@@ -37,6 +37,11 @@ function FetchFeed($url){
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
   
   <link rel="stylesheet" href="/css/style.css">
+
+  <meta property="og:title" content="Damage Report">
+  <meta property="og:type" content="news">
+  <meta property="og:url" content="https://damagereport.cjtrowbridge.com">
+  <meta property="og:image" content="https://damagereport.cjtrowbridge.com/img/damage-report.jpg">
     
 </head>
 
@@ -68,19 +73,19 @@ function FetchFeed($url){
       <img src="/img/damage-report.jpg" class="picard">
       <div class="podcastContainer" data-feed="/?feed=npr">
         <img src="https://media.npr.org/images/podcasts/2013/primary/hourly_news_summary-c464279737c989a5fbf3049bc229152af3c36b9d.png?s=1400">
-        <h4>NPR: Hourly News Summary</h4>
+        <h4>NPR: Hourly World News</h4>
         <div class="player"></div>
         <div class="clearer"></div>
       </div>
       <div class="podcastContainer" data-feed="/?feed=cbc">
         <img src="http://www.cbc.ca/podcasting/images/promo-hourlies.jpg">
-        <h4>CBC: Hourly News</h4>
+        <h4>CBC: Hourly World News</h4>
         <div class="player"></div>
         <div class="clearer"></div>
       </div>
       <div class="podcastContainer" data-feed="/?feed=dw">
         <img src="http://www.dw.com/image/2135752_7.jpg">
-        <h4>Deutsche Welle: Hourly News</h4>
+        <h4>Deutsche Welle: Hourly World News</h4>
         <div class="player"></div>
         <div class="clearer"></div>
       </div>
