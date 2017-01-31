@@ -8,6 +8,18 @@ if(isset($_GET['feed'])){
      FetchFeed('http://www.cbc.ca/podcasting/includes/hourlynews.xml');
    case 'dw':
      FetchFeed('http://rss.dw.com/xml/podcast_news');
+   case 'npr':
+     FetchFeed('http://www.npr.org/rss/rss.php?id=1004');
+   case 'npr':
+     FetchFeed('http://www.cbc.ca/cmlink/rss-world');
+   case 'npr':
+     FetchFeed('http://www.aljazeera.com/xml/rss/all.xml');
+   case 'npr':
+     FetchFeed('http://rss.dw.com/rdf/rss-en-top');
+   case 'npr':
+     FetchFeed('http://feeds.bbci.co.uk/news/world/rss.xml');
+   case 'npr':
+     FetchFeed('http://feeds.foxnews.com/foxnews/world');
    default:
      die('Unknown Feed');
  }
@@ -72,8 +84,6 @@ function FetchFeed($url){
       <div class="row">
         <div class="col-xs-12 col-md-5 podcastColumn">
         <img src="/img/damage-report.jpg" class="picard">
-        <h4>Choose Quality Sources</h4>
-        <p>These high quality news sources do not include any commentary, just news.</p>
         <div class="podcastContainer" data-feed="/?feed=npr">
           <img src="https://media.npr.org/images/podcasts/2013/primary/hourly_news_summary-c464279737c989a5fbf3049bc229152af3c36b9d.png?s=1400">
           <h4>NPR: Hourly World News</h4>
@@ -93,8 +103,13 @@ function FetchFeed($url){
           <div class="clearer"></div>
         </div>
       </div>
-      <div class="col-xs-12 col-md-7">
-
+      <div class="col-xs-12 col-md-7 storyColumn">
+        <h1>And Important Distinction</h1>
+        <p>There is a difference between news and commentary. Most sources we think of as "news" sources do not even claim to be news. If you go to Huffington Post or Drudge Report and open up their top five links, you will see a banner at the top that says "Opinion." Fox News, despite its name, only claims to be news during its morning news hours. Their primetime shows that people actually watch are considered commentary and do not have to make any attempt to avoid bias.</p>
+        <h2>Finding News and Avoiding Commentary</h2>
+        <p>It is surprisingly easy to avoid opinion and commentary and get high-quality news even from the most biased sources. If you go to Fox News' website, you will see a long list of commentary and opinion on the front page. But if you click through to the page titled "World News," you will find actual news content with far less bias.</p>
+        <div class="podcastContainer" data-feed="/?feed=npr">
+        
       </div>
     </div>
   
