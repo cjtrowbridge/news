@@ -33,7 +33,7 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-md-5 podcastColumn">
-      <img src="/img/damage-report.jpg">
+      <img src="/img/damage-report.jpg" class="picard">
       <h2>
         Cutting Edge World News
       </h2>
