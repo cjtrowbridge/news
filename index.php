@@ -44,32 +44,13 @@ function FetchFeed($url){
 </head>
 
 <body>
-  <div id="fb-root"></div>
-  <script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=1203074133061923";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));</script>
- 
-  <nav class="navbar navbar-fixed-top navbar-dark bg-primary container">
-    <a class="navbar-brand" href="https://news.cjtrowbridge.com">Damage Report</a>
-    <ul class="nav navbar-nav">
-      
-    </ul>
-    <div class="facebookBox">
-      <div class="fb-like" data-href="https://news.cjtrowbridge.com/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
-    </div>
-  </nav>
 
   <div class="container">
 
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
-        <img src="/img/damage-report.jpg" class="picard">
-        <div class="podcastContainer" data-feed="/?feed=npr-podcast">
+         <div class="podcastContainer" data-feed="/?feed=npr-podcast">
           <img src="https://media.npr.org/images/podcasts/2013/primary/hourly_news_summary-c464279737c989a5fbf3049bc229152af3c36b9d.png?s=1400">
           <h4>NPR: Hourly World News</h4>
           <div class="player"></div>
@@ -88,34 +69,26 @@ function FetchFeed($url){
           <div class="clearer"></div>
         </div>
          
-       <h1>An Important Distinction</h1>
+        <h1>An Important Distinction</h1>
+         <p>
+           There is a difference between news and commentary. Many of the most popular sources people think of as "news" do not even claim to be news. 
+           If you go to <a href="http://www.huffingtonpost.com/" target="_blank">Huffington Post</a> or <a href="http://www.drudgereport.com/" target="_blank">Drudge Report</a> and open up their top five links, you will see a banner at the top that says "Opinion." 
+           <a href="http://www.foxnews.com/" target="_blank">Fox News</a>, despite its name, only claims to be news during morning news hours.
+        </p>
+        <h2>Finding News and Avoiding Commentary</h2>
         <p>
-          There is a difference between news and commentary. Many of the most popular sources people think of as "news" do not even claim to be news. 
-          If you go to <a href="http://www.huffingtonpost.com/" target="_blank">Huffington Post</a> or <a href="http://www.drudgereport.com/" target="_blank">Drudge Report</a> and open up their top five links, you will see a banner at the top that says "Opinion." 
-          <a href="http://www.foxnews.com/" target="_blank">Fox News</a>, despite its name, only claims to be news during morning news hours.
-       </p>
-       <h2>Finding News and Avoiding Commentary</h2>
-       <p>
-         It is surprisingly easy to avoid opinion and commentary and get high-quality news. If you go to Fox News' website, you will see a long list of commentary and opinion on the front page, but if you go to the "World News" page you will find actual news content with far less bias.
-       </p>
-       <h2>Fresh</h2>
-       <p>
-         These podcasts are updated every hour.
-       </p>
+          It is surprisingly easy to avoid opinion and commentary and get high-quality news. If you go to Fox News' website, you will see a long list of commentary and opinion on the front page, but if you go to the "World News" page you will find actual news content with far less bias.
+        </p>
+        <h2>Fresh</h2>
+        <p>
+          These podcasts are updated every hour.
+        </p>
          
+       </div>
     </div>
-  
   </div><!-- /.container -->
     
   <script src="/js/news.js"></script>
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-49854332-3', 'auto');
-    ga('send', 'pageview');
-  </script>
+  
 </body>
 </html>
