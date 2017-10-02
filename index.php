@@ -51,7 +51,7 @@ function FetchFeed($url){
       <div class="row">
         <div class="col-xs-12 col-md-6">
          
-          <h1>News</h1>
+          <br><h1>News</h1>
           <p>
             There is a difference between news and commentary. Many of the most popular sources people think of as "news" do not even claim to be news. 
             If you go to <a href="http://www.huffingtonpost.com/" target="_blank">Huffington Post</a> or <a href="http://www.drudgereport.com/" target="_blank">Drudge Report</a> and open up their top five links, you will see a banner at the top that says "Opinion." 
