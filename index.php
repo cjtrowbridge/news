@@ -8,18 +8,6 @@ if(isset($_GET['feed'])){
      FetchFeed('http://www.cbc.ca/podcasting/includes/hourlynews.xml');
    case 'dw-podcast':
      FetchFeed('http://rss.dw.com/xml/podcast_news');
-   case 'npr':
-     FetchFeed('http://www.npr.org/rss/rss.php?id=1004');
-   case 'cbc':
-     FetchFeed('http://www.cbc.ca/cmlink/rss-world');
-   case 'aj':
-     FetchFeed('http://www.aljazeera.com/xml/rss/all.xml');
-   case 'dw':
-     FetchFeed('http://rss.dw.com/rdf/rss-en-top');
-   case 'bbc':
-     FetchFeed('http://feeds.bbci.co.uk/news/world/rss.xml');
-   case 'fox':
-     FetchFeed('http://feeds.foxnews.com/foxnews/world?format=xml');
    default:
      die('Unknown Feed');
  }
@@ -38,9 +26,7 @@ function FetchFeed($url){
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="icon" href="/img/damage-report.jpg">
-
-  <title>Damage Report</title>
+  <title>News</title>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
@@ -50,13 +36,11 @@ function FetchFeed($url){
   
   <link rel="stylesheet" href="/css/style.css">
 
-  <meta property="og:title" content="Damage Report">
+  <meta property="og:title" content="News">
   <meta property="og:type" content="website">
   <meta property="og:description" content="These high quality news sources do not include any commentary, just news." />
-  <meta property="og:url" content="https://damagereport.cjtrowbridge.com">
-  <meta property="og:image" content="https://damagereport.cjtrowbridge.com/img/damage-report.jpg">
+  <meta property="og:url" content="https://news.cjtrowbridge.com">
   
-  <meta name="google-site-verification" content="RedbnFZrd2W2D1gCx2tGH67fGPAYcp-ONx68PZsAJmo" />
 </head>
 
 <body>
@@ -70,20 +54,20 @@ function FetchFeed($url){
   }(document, 'script', 'facebook-jssdk'));</script>
  
   <nav class="navbar navbar-fixed-top navbar-dark bg-primary container">
-    <a class="navbar-brand" href="https://damagereport.cjtrowbridge.com">Damage Report</a>
+    <a class="navbar-brand" href="https://news.cjtrowbridge.com">Damage Report</a>
     <ul class="nav navbar-nav">
       
     </ul>
     <div class="facebookBox">
-      <div class="fb-like" data-href="https://damagereport.cjtrowbridge.com/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+      <div class="fb-like" data-href="https://news.cjtrowbridge.com/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
     </div>
   </nav>
 
-  <div class="container" id="bodyContainer">
+  <div class="container">
 
     <div class="container">
       <div class="row">
-        <div class="col-xs-12 col-md-5 podcastColumn">
+        <div class="col-xs-12">
         <img src="/img/damage-report.jpg" class="picard">
         <div class="podcastContainer" data-feed="/?feed=npr-podcast">
           <img src="https://media.npr.org/images/podcasts/2013/primary/hourly_news_summary-c464279737c989a5fbf3049bc229152af3c36b9d.png?s=1400">
@@ -103,9 +87,8 @@ function FetchFeed($url){
           <div class="player"></div>
           <div class="clearer"></div>
         </div>
-      </div>
-      <div class="col-xs-12 col-md-7 storyColumn">
-        <h1>An Important Distinction</h1>
+         
+       <h1>An Important Distinction</h1>
         <p>
           There is a difference between news and commentary. Many of the most popular sources people think of as "news" do not even claim to be news. 
           If you go to <a href="http://www.huffingtonpost.com/" target="_blank">Huffington Post</a> or <a href="http://www.drudgereport.com/" target="_blank">Drudge Report</a> and open up their top five links, you will see a banner at the top that says "Opinion." 
@@ -119,26 +102,12 @@ function FetchFeed($url){
        <p>
          These podcasts are updated every hour.
        </p>
-       <?php
-       /*
-       These are not ready. DW uses weird dates which are hard to sort. Will work on that later.
-       ?>
-       <div class="feedContainer" data-feed="/?feed=npr"></div>
-       <div class="feedContainer" data-feed="/?feed=cbc"></div>
-       <div class="feedContainer" data-feed="/?feed=aj"></div>
-       <div class="feedContainer" data-feed="/?feed=dw"></div>
-       <div class="feedContainer" data-feed="/?feed=bbc"></div>
-       <div class="feedContainer" data-feed="/?feed=fox"></div>
-       <?php
-       */
-       ?>
-       <div id="feedContainer"></div>
-      </div>
+         
     </div>
   
   </div><!-- /.container -->
     
-  <script src="/js/damagereport.js"></script>
+  <script src="/js/news.js"></script>
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
