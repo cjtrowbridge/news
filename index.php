@@ -49,39 +49,42 @@ function FetchFeed($url){
 
     <div class="container">
       <div class="row">
-        <div class="col-xs-12">
+        <div class="col-xs-12 col-md-6">
          
-         <h1>News</h1>
-         <p>
-           There is a difference between news and commentary. Many of the most popular sources people think of as "news" do not even claim to be news. 
-           If you go to <a href="http://www.huffingtonpost.com/" target="_blank">Huffington Post</a> or <a href="http://www.drudgereport.com/" target="_blank">Drudge Report</a> and open up their top five links, you will see a banner at the top that says "Opinion." 
-           <a href="http://www.foxnews.com/" target="_blank">Fox News</a>, despite its name, only claims to be news during morning news hours.
-        </p>
-        <p>
-          It is surprisingly easy to avoid opinion and commentary and get high-quality news. If you go to Fox News' website, you will see a long list of commentary and opinion on the front page, but if you go to the "World News" page you will find actual news content with far less bias.
-        </p>
-        
+          <h1>News</h1>
+          <p>
+            There is a difference between news and commentary. Many of the most popular sources people think of as "news" do not even claim to be news. 
+            If you go to <a href="http://www.huffingtonpost.com/" target="_blank">Huffington Post</a> or <a href="http://www.drudgereport.com/" target="_blank">Drudge Report</a> and open up their top five links, you will see a banner at the top that says "Opinion." 
+            <a href="http://www.foxnews.com/" target="_blank">Fox News</a>, despite its name, only claims to be news during morning news hours.
+          </p>
+          <p>
+            It is surprisingly easy to avoid opinion and commentary and get high-quality news. If you go to Fox News' website, you will see a long list of commentary and opinion on the front page, but if you go to the "World News" page you will find actual news content with far less bias.
+          </p>
          
-         <div class="podcastContainer" data-feed="/?feed=npr-podcast">
-          <img src="https://media.npr.org/images/podcasts/2013/primary/hourly_news_summary-c464279737c989a5fbf3049bc229152af3c36b9d.png?s=1400">
-          <h4>NPR: Hourly World News</h4>
-          <div class="player"></div>
-          <div class="clearer"></div>
         </div>
-        <div class="podcastContainer" data-feed="/?feed=cbc-podcast">
-          <img src="http://www.cbc.ca/podcasting/images/promo-hourlies.jpg">
-          <h4>CBC: Hourly World News</h4>
-          <div class="player"></div>
-          <div class="clearer"></div>
-        </div>
-        <div class="podcastContainer" data-feed="/?feed=dw-podcast">
-          <img src="http://www.dw.com/image/2135752_7.jpg">
-          <h4>Deutsche Welle: Hourly World News</h4>
-          <div class="player"></div>
-          <div class="clearer"></div>
-        </div>
+        <div class="col-xs-12 col-md-6">
          
-       </div>
+          <div class="podcastContainer" data-feed="/?feed=npr-podcast">
+            <img src="https://media.npr.org/images/podcasts/2013/primary/hourly_news_summary-c464279737c989a5fbf3049bc229152af3c36b9d.png?s=1400">
+            <h4>NPR: Hourly World News</h4>
+            <div class="player"></div>
+            <div class="clearer"></div>
+          </div>
+          <div class="podcastContainer" data-feed="/?feed=cbc-podcast">
+            <img src="http://www.cbc.ca/podcasting/images/promo-hourlies.jpg">
+            <h4>CBC: Hourly World News</h4>
+            <div class="player"></div>
+            <div class="clearer"></div>
+          </div>
+          <div class="podcastContainer" data-feed="/?feed=dw-podcast">
+            <img src="http://www.dw.com/image/2135752_7.jpg">
+            <h4>Deutsche Welle: Hourly World News</h4>
+            <div class="player"></div>
+            <div class="clearer"></div>
+          </div>
+         
+        </div>
+      </div>
     </div>
   </div><!-- /.container -->
     
