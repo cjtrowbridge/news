@@ -8,7 +8,7 @@ $(".podcastContainer").each(function(){
     var $url = $(data).find("enclosure:first-of-type").attr('url');
     
     var $player='<audio controls preload';
-    if(feed=='/?feed=npr-podcast'){
+    if(feed=='./?feed=npr-podcast'){
        $player+=' autoplay';
     }
     $player+='><source src="'+$url+'" type="audio/mp3"></audio>';
