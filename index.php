@@ -34,12 +34,12 @@ function FetchFeed($url){
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
   
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 
   <meta property="og:title" content="News">
   <meta property="og:type" content="website">
   <meta property="og:description" content="These high quality news sources do not include any commentary, just news." />
-  <meta property="og:url" content="https://news.cjtrowbridge.com">
+  <meta property="og:url" content="https://cjtrowbridge.com/news">
   
 </head>
 
@@ -49,20 +49,7 @@ function FetchFeed($url){
 
     <div class="container">
       <div class="row">
-        <div class="col-xs-12 col-md-6">
-         
-          <br><h1>News</h1>
-          <p>
-            There is a difference between news and commentary. Many of the most popular sources people think of as "news" do not even claim to be news. 
-            If you go to <a href="http://www.huffingtonpost.com/" target="_blank">Huffington Post</a> or <a href="http://www.drudgereport.com/" target="_blank">Drudge Report</a> and open up their top five links, you will see a banner at the top that says "Opinion." 
-            <a href="http://www.foxnews.com/" target="_blank">Fox News</a>, despite its name, only claims to be news during morning news hours.
-          </p>
-          <p>
-            It is surprisingly easy to avoid opinion and commentary and get high-quality news. If you go to Fox News' website, you will see a long list of commentary and opinion on the front page, but if you go to the "World News" page you will find actual news content with far less bias.
-          </p>
-         
-        </div>
-        <div class="col-xs-12 col-md-6">
+        <div class="col-xs-12">
          
           <div class="podcastContainer" data-feed="/?feed=npr-podcast">
             <img src="https://media.npr.org/images/podcasts/2013/primary/hourly_news_summary-c464279737c989a5fbf3049bc229152af3c36b9d.png?s=1400">
@@ -88,7 +75,7 @@ function FetchFeed($url){
     </div>
   </div><!-- /.container -->
     
-  <script src="/js/news.js"></script>
+  <script src="js/news.js"></script>
   
 </body>
 </html>
