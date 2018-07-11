@@ -52,19 +52,19 @@ function FetchFeed($url){
         <div class="col-xs-12">
          
           <div class="podcastContainer" data-feed="/?feed=npr-podcast">
-            <img src="https://media.npr.org/images/podcasts/2013/primary/hourly_news_summary-c464279737c989a5fbf3049bc229152af3c36b9d.png?s=1400">
+            <img src="//media.npr.org/images/podcasts/2013/primary/hourly_news_summary-c464279737c989a5fbf3049bc229152af3c36b9d.png?s=1400">
             <h4>NPR: Hourly World News</h4>
             <div class="player"></div>
             <div class="clearer"></div>
           </div>
           <div class="podcastContainer" data-feed="/?feed=cbc-podcast">
-            <img src="http://www.cbc.ca/podcasting/images/promo-hourlies.jpg">
+            <img src="//www.cbc.ca/podcasting/images/promo-hourlies.jpg">
             <h4>CBC: Hourly World News</h4>
             <div class="player"></div>
             <div class="clearer"></div>
           </div>
           <div class="podcastContainer" data-feed="/?feed=dw-podcast">
-            <img src="http://www.dw.com/image/2135752_7.jpg">
+            <img src="//www.dw.com/image/2135752_7.jpg">
             <h4>Deutsche Welle: Hourly World News</h4>
             <div class="player"></div>
             <div class="clearer"></div>
