@@ -29,7 +29,7 @@ if(isset($_GET['feed'])){
     case 'limbaugh':
       FetchFeed('https://rss.art19.com/rush-limbaugh-morning-update');
     case 'shapiro':
-      FetchFee('http://feeds.soundcloud.com/users/soundcloud:users:174770374/sounds.rss');
+      FetchFeed('http://feeds.soundcloud.com/users/soundcloud:users:174770374/sounds.rss');
       
     default:
       die('Unknown Feed');
