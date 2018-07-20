@@ -1,5 +1,8 @@
+h1{
+  text-align: center;
+}
 .podcastColumn h2{
- margin: 1em 0 1em 0; 
+  margin: 1em 0 1em 0; 
 }
 .podcastContainer img{
   float: left;
