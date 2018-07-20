@@ -8,8 +8,6 @@ if(isset($_GET['feed'])){
      FetchFeed('http://www.cbc.ca/podcasting/includes/hourlynews.xml');
    case 'dw-podcast':
      FetchFeed('http://rss.dw.com/xml/podcast_news');
-   case 'nyt-the-daily':
-     FetchFeed('https://www.nytimes.com/svc/collections/v1/publish/https://www.nytimes.com/column/the-daily/rss.xml');
    case 'bbs-world-news':
      FetchFeed('http://podcasts.files.bbci.co.uk/p02nq0gn.rss');
    
@@ -71,12 +69,6 @@ function FetchFeed($url){
           <div class="podcastContainer" data-feed="./?feed=dw-podcast">
             <img src="//www.dw.com/image/2135752_7.jpg">
             <h4>Deutsche Welle: Hourly World News</h4>
-            <div class="player"></div>
-            <div class="clearer"></div>
-          </div>
-          <div class="podcastContainer" data-feed="./?feed=nyt-the-daily">
-            <img src="https://static01.nyt.com/images/2017/01/29/podcasts/the-daily-album-art/the-daily-album-art-thumbLarge-v4.jpg">
-            <h4>The New York Times: The Daily</h4>
             <div class="player"></div>
             <div class="clearer"></div>
           </div>
