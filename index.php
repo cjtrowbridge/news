@@ -31,7 +31,7 @@
         <h1><a href="left.html">Left</a></h1>
       </div>
       <div class="col-xs-12 col-md-4">
-        <h1><a href="index.html">Center</a></h1>
+        <h1><a href="index.html" class="text-center">Center</a></h1>
       </div>
       <div class="col-xs-12 col-md-4">
         <h1><a href="right.html">Right</a></h1>
