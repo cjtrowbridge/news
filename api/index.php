@@ -22,6 +22,8 @@ if(isset($_GET['feed'])){
       FetchFeed('https://www.espn.com/espnradio/feeds/rss/podcast.xml?id=14554755');
     case 'pod-save-america':
       FetchFeed('https://feeds.feedburner.com/pod-save-america');
+    case 'waking-up':
+      FetchFeed('http://wakingup.libsyn.com/rss');
 
     /* Right */
     case 'hannity':
