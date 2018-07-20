@@ -26,45 +26,54 @@
 
   <div class="container">
 
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-md-4">
-          
+    <div class="row">
+      <div class="col-xs-12 col-md-4">
+        <h1><a href="left.html">Left</a></h1>
+      </div>
+      <div class="col-xs-12 col-md-4">
+        <h1><a href="index.html">Center</a></h1>
+      </div>
+      <div class="col-xs-12 col-md-4">
+        <h1><a href="right.html">Right</a></h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-md-4">
+
+      </div>
+      <div class="col-xs-12 col-md-4">
+        <div class="podcastContainer" data-feed="./api/?feed=npr-podcast">
+          <img src="//media.npr.org/images/podcasts/2013/primary/hourly_news_summary-c464279737c989a5fbf3049bc229152af3c36b9d.png?s=1400">
+          <h4>NPR: Hourly World News</h4>
+          <div class="player"></div>
+          <div class="clearer"></div>
         </div>
-        <div class="col-xs-12 col-md-4">
-          <div class="podcastContainer" data-feed="./api/?feed=npr-podcast">
-            <img src="//media.npr.org/images/podcasts/2013/primary/hourly_news_summary-c464279737c989a5fbf3049bc229152af3c36b9d.png?s=1400">
-            <h4>NPR: Hourly World News</h4>
-            <div class="player"></div>
-            <div class="clearer"></div>
-          </div>
-          <div class="podcastContainer" data-feed="./api/?feed=cbc-podcast">
-            <img src="//www.cbc.ca/podcasting/images/promo-hourlies.jpg">
-            <h4>CBC: Hourly World News</h4>
-            <div class="player"></div>
-            <div class="clearer"></div>
-          </div>
-          <div class="podcastContainer" data-feed="./api/?feed=dw-podcast">
-            <img src="//www.dw.com/image/2135752_7.jpg">
-            <h4>Deutsche Welle: Hourly World News</h4>
-            <div class="player"></div>
-            <div class="clearer"></div>
-          </div>
-          <div class="podcastContainer" data-feed="./api/?feed=bbc-world-news">
-            <img src="https://pbs.twimg.com/media/DUXWo-lX4AA75gs.jpg">
-            <h4>BBC: World News</h4>
-            <div class="player"></div>
-            <div class="clearer"></div>
-          </div>
+        <div class="podcastContainer" data-feed="./api/?feed=cbc-podcast">
+          <img src="//www.cbc.ca/podcasting/images/promo-hourlies.jpg">
+          <h4>CBC: Hourly World News</h4>
+          <div class="player"></div>
+          <div class="clearer"></div>
         </div>
-        <div class="col-xs-12 col-md-4">
-          
+        <div class="podcastContainer" data-feed="./api/?feed=dw-podcast">
+          <img src="//www.dw.com/image/2135752_7.jpg">
+          <h4>Deutsche Welle: Hourly World News</h4>
+          <div class="player"></div>
+          <div class="clearer"></div>
         </div>
+        <div class="podcastContainer" data-feed="./api/?feed=bbc-world-news">
+          <img src="https://pbs.twimg.com/media/DUXWo-lX4AA75gs.jpg">
+          <h4>BBC: World News</h4>
+          <div class="player"></div>
+          <div class="clearer"></div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-4">
+
       </div>
     </div>
   </div><!-- /.container -->
     
-  <script src="js/news.js"></script>
+  <script src="./js/news.js"></script>
   
 </body>
 </html>
