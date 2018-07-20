@@ -1,28 +1,4 @@
-<?php
-
-if(isset($_GET['feed'])){
- switch($_GET['feed']){
-   case 'npr-podcast':
-     FetchFeed('https://www.npr.org/rss/podcast.php?id=500005');
-   case 'cbc-podcast':
-     FetchFeed('http://www.cbc.ca/podcasting/includes/hourlynews.xml');
-   case 'dw-podcast':
-     FetchFeed('http://rss.dw.com/xml/podcast_news');
-   case 'bbc-world-news':
-     FetchFeed('http://podcasts.files.bbci.co.uk/p02nq0gn.rss');
-   
-   default:
-     die('Unknown Feed');
- }
-}
-
-function FetchFeed($url){
-  header("Content-type: text/xml");
-  echo file_get_contents($url);
-  exit;
-}
-
-?><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -52,32 +28,36 @@ function FetchFeed($url){
 
     <div class="container">
       <div class="row">
-        <div class="col-xs-12">
-         
-          <div class="podcastContainer" data-feed="./?feed=npr-podcast">
+        <div class="col-xs-12 col-md-4">
+          
+        </div>
+        <div class="col-xs-12 col-md-4">
+          <div class="podcastContainer" data-feed="./api/?feed=npr-podcast">
             <img src="//media.npr.org/images/podcasts/2013/primary/hourly_news_summary-c464279737c989a5fbf3049bc229152af3c36b9d.png?s=1400">
             <h4>NPR: Hourly World News</h4>
             <div class="player"></div>
             <div class="clearer"></div>
           </div>
-          <div class="podcastContainer" data-feed="./?feed=cbc-podcast">
+          <div class="podcastContainer" data-feed="./api/?feed=cbc-podcast">
             <img src="//www.cbc.ca/podcasting/images/promo-hourlies.jpg">
             <h4>CBC: Hourly World News</h4>
             <div class="player"></div>
             <div class="clearer"></div>
           </div>
-          <div class="podcastContainer" data-feed="./?feed=dw-podcast">
+          <div class="podcastContainer" data-feed="./api/?feed=dw-podcast">
             <img src="//www.dw.com/image/2135752_7.jpg">
             <h4>Deutsche Welle: Hourly World News</h4>
             <div class="player"></div>
             <div class="clearer"></div>
           </div>
-          <div class="podcastContainer" data-feed="./?feed=bbc-world-news">
+          <div class="podcastContainer" data-feed="./api/?feed=bbc-world-news">
             <img src="https://pbs.twimg.com/media/DUXWo-lX4AA75gs.jpg">
             <h4>BBC: World News</h4>
             <div class="player"></div>
             <div class="clearer"></div>
           </div>
+        </div>
+        <div class="col-xs-12 col-md-4">
           
         </div>
       </div>
