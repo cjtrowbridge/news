@@ -1,2 +1,2 @@
 # News
-A few hard news podcasts with a general lack of commentary.
+A simple web app for catching up on news while separating out opinion.
