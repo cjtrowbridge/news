@@ -30,6 +30,8 @@ if(isset($_GET['feed'])){
       FetchFeed('https://rss.art19.com/rush-limbaugh-morning-update');
     case 'shapiro':
       FetchFeed('http://feeds.soundcloud.com/users/soundcloud:users:174770374/sounds.rss');
+    case 'federalist':
+      FetchFeed('http://www.podcastone.com/podcast?categoryID2=1185');
       
     default:
       die('Unknown Feed');
