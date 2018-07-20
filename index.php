@@ -8,7 +8,7 @@ if(isset($_GET['feed'])){
      FetchFeed('http://www.cbc.ca/podcasting/includes/hourlynews.xml');
    case 'dw-podcast':
      FetchFeed('http://rss.dw.com/xml/podcast_news');
-   case 'bbs-world-news':
+   case 'bbc-world-news':
      FetchFeed('http://podcasts.files.bbci.co.uk/p02nq0gn.rss');
    
    default:
