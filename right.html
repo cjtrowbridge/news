@@ -7,11 +7,10 @@
 
   <title>Opinion: Right</title>
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.js"></script>
   
   <link rel="stylesheet" href="css/style.css">
 
@@ -23,50 +22,60 @@
 </head>
 
 <body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">News</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="left.html">Opinion: Left</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="right.html">Opinion: Right  <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<br>
+  
+<div class="container">
+  <div class="jumbotron">
+    <h1 class="display-4">Opinion: Right</h1>
+    <p class="lead">This web app helps you catch up on the news while separating out opinion.</p>
+    <hr>
+    <p>This section of the app shows non-news, opinion podcasts with a bias towards the right.</p>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-md-4">
+      <div class="podcastContainer" data-feed="./api/?feed=shapiro">
+        <img src="https://is2-ssl.mzstatic.com/image/thumb/Music118/v4/f4/d2/18/f4d218f7-cc28-e9f2-69f6-958abc6cd9b0/source/600x600bb.jpg">
+        <h4>The Ben Shapiro Show</h4>
+        <div class="player"></div>
+        <div class="clearer"></div>
+      </div>
+      <div class="podcastContainer" data-feed="./api/?feed=hannity">
+        <img src="https://content.production.cdn.art19.com/images/ef/b2/cd/20/efb2cd20-d39c-42d1-8e31-84dfb5c0c0b4/2868a2eb718e6e4398baa2d83a24f60805b932fdf263744532455e716b898985cdb59830e1e1709d772261e6a4c7fcef7e89342cf1120cb22e665ad874df3de5.jpeg">
+        <h4>The Sean Hannity Show</h4>
+        <div class="player"></div>
+        <div class="clearer"></div>
+      </div>
+      <div class="podcastContainer" data-feed="./api/?feed=limbaugh">
+        <img src="https://content.production.cdn.art19.com/images/a0/93/5d/82/a0935d82-1e06-4a7b-bfe8-c3babda8cd3a/6848c0e846471c5eec600c68ece49d4f5f62b7484f5a22571f171430ea7b478eee3b92fca487e3716f003633173aa5b2ff51ae8ca4f0a432c640bdd518864b19.jpeg">
+        <h4>Rush Limbaugh Morning Update</h4>
+        <div class="player"></div>
+        <div class="clearer"></div>
+      </div>
 
-  <div class="container">
 
-    <div class="row">
-      <div class="col-xs-12 col-md-4">
-        <a href="left.html" class="btn btn-large btn-block btn-primary">Opinion: Left</a>
-      </div>
-      <div class="col-xs-12 col-md-4">
-        <a href="index.html" class="btn btn-large btn-block btn-success">News</a>
-      </div>
-      <div class="col-xs-12 col-md-4">
-        <a href="right.html" class="btn btn-large btn-block btn-danger">Opinion: Right</a>
-      </div>
     </div>
-    <div class="row">
-      <div class="col-xs-12 col-md-8">
-
-      </div>
-      <div class="col-xs-12 col-md-4">
-        <div class="podcastContainer" data-feed="./api/?feed=shapiro">
-          <img src="https://is2-ssl.mzstatic.com/image/thumb/Music118/v4/f4/d2/18/f4d218f7-cc28-e9f2-69f6-958abc6cd9b0/source/600x600bb.jpg">
-          <h4>The Ben Shapiro Show</h4>
-          <div class="player"></div>
-          <div class="clearer"></div>
-        </div>
-        <div class="podcastContainer" data-feed="./api/?feed=hannity">
-          <img src="https://content.production.cdn.art19.com/images/ef/b2/cd/20/efb2cd20-d39c-42d1-8e31-84dfb5c0c0b4/2868a2eb718e6e4398baa2d83a24f60805b932fdf263744532455e716b898985cdb59830e1e1709d772261e6a4c7fcef7e89342cf1120cb22e665ad874df3de5.jpeg">
-          <h4>The Sean Hannity Show</h4>
-          <div class="player"></div>
-          <div class="clearer"></div>
-        </div>
-        <div class="podcastContainer" data-feed="./api/?feed=limbaugh">
-          <img src="https://content.production.cdn.art19.com/images/a0/93/5d/82/a0935d82-1e06-4a7b-bfe8-c3babda8cd3a/6848c0e846471c5eec600c68ece49d4f5f62b7484f5a22571f171430ea7b478eee3b92fca487e3716f003633173aa5b2ff51ae8ca4f0a432c640bdd518864b19.jpeg">
-          <h4>Rush Limbaugh Morning Update</h4>
-          <div class="player"></div>
-          <div class="clearer"></div>
-        </div>
-        
-        
-      </div>
-    </div>
-  </div><!-- /.container -->
+  </div>
+</div><!-- /.container -->
     
-  <script src="./js/news.js"></script>
+<script src="./js/news.js"></script>
   
 </body>
 </html>
