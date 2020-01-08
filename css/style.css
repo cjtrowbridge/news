@@ -17,6 +17,9 @@
  clear: both; 
 }
 audio{
- max-width: 100%; 
+  max-width: 100%; 
+}
+.player{
   display: block;
+  clear: both;
 }
