@@ -7,11 +7,11 @@ $(".podcastContainer").each(function(){
     
     var $url = $(data).find("enclosure:first-of-type").attr('url');
     
-    var $player='<div class="player"><audio controls preload';
+    var $player='<audio controls preload';
     if(feed=='./?feed=npr-podcast'){
        $player+=' autoplay';
     }
-    $player+='><source src="'+$url+'" type="audio/mp3"></audio></div>';
+    $player+='><source src="'+$url+'" type="audio/mp3"></audio>';
     
     $(podcastContainer).find(".player").html($player);
     
