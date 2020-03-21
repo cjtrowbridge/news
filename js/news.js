@@ -9,9 +9,9 @@ $(".podcastContainer").each(function(){
     
     var $player='<audio controls preload';
     if(feed=='./api/?feed=npr-podcast'){
-       $player+=' autoplay"';
+       $player+=' autoplay';
     }
-    $player+='feed="'+feed+'"><source src="'+$url+'" type="audio/mp3"></audio>';
+    $player+=' feed="'+feed+'"><source src="'+$url+'" type="audio/mp3"></audio>';
     
     $(podcastContainer).find(".player").html($player);
     
