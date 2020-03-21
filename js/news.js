@@ -13,11 +13,13 @@ $(".podcastContainer").each(function(){
     }
     $player+='><source src="'+$url+'" type="audio/mp3"></audio>';
     
-    $(podcastContainer).find(".player").html($player);
+    $(podcastContainer).find(".player").html($player,function(){
     
-    if(feed=='/?feed=npr'){
-      $('audio:first-of-type')[0].play();
-    }
+      if(feed=='/?feed=npr'){
+        $('audio:first-of-type')[0].play();
+      }
+      
+    });
     
     $(podcastContainer).find("audio").on('ended', function(){
      
