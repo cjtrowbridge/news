@@ -21,7 +21,13 @@ $(".podcastContainer").each(function(){
      $.when($dead.fadeOut(400))
      .done(function() {
       $dead.remove();
-      $('audio:first-of-type')[0].play();
+      
+       if($('audio:first-of-type').length>0){
+         location.reload();
+       }else{
+         $('audio:first-of-type')[0].play();
+       }
+       
      });
 
    });
