@@ -22,7 +22,7 @@ $(".podcastContainer").each(function(){
      .done(function() {
       $dead.remove();
       
-       if($('audio:first-of-type').length>0){
+       if($('audio:first-of-type').length==0){
          location.reload();
        }else{
          $('audio:first-of-type')[0].play();
